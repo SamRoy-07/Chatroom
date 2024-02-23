@@ -19,15 +19,19 @@ if (isset($_SESSION["userName"]) && isset($_SESSION["Id"])) {
       }
 
       body {
+        background-color:black;
+  
+      }
+      .container{
         display: flex;
         flex-direction: row;
-
+        position:absolute;
         align-items: center;
-
-        justify-content: center;
-
-        min-height: 100vh;
-        background-color: #ffe4e1;
+        justify-content: center;     
+        background-color: black;
+        
+        margin-top:6%;
+        margin-left:30%;
 
       }
 
@@ -152,15 +156,10 @@ if (isset($_SESSION["userName"]) && isset($_SESSION["Id"])) {
 
   <body>
 
-    <div class="proverb">
-
-      <div class="proverbb">
-
-      </div>
-    </div>
+    
 
 
-
+<div class="container">
     <div class="chat">
       <h2>Solve your question</h2>
       <div class="msg">
@@ -173,18 +172,15 @@ if (isset($_SESSION["userName"]) && isset($_SESSION["Id"])) {
         <button class="button-submit" onclick="update()">Send</button>
       </div>
     </div>
-    <div class="proverb">
-      <div class="proverbb">
-        Knowledge is having the right answer. <br>Intelligence is asking the right question
-      </div>
-    </div>
+    
     <div class="logout">
       <a href="destroychatsession.php">
         Logout from Chatroom
       </a>
     </div>
+    </div>
   </body>
-  <script src="js/script.js"></script>
+  <script src="script.js"></script>
 
   </html>
 
