@@ -19,19 +19,21 @@ if (isset($_SESSION["userName"]) && isset($_SESSION["Id"])) {
       }
 
       body {
-        background-color:black;
-  
+        background-color: #f7f7f7;
+
       }
-      .container{
+
+      .container {
         display: flex;
         flex-direction: row;
-        position:absolute;
+        position: absolute;
         align-items: center;
-        justify-content: center;     
-        background-color: black;
-        
-        margin-top:6%;
-        margin-left:30%;
+        justify-content: center;
+        background-color: #f7f7f7;
+        border-radius: 10px;
+
+        margin-top: 2%;
+        margin-left: 30%;
 
       }
 
@@ -70,7 +72,7 @@ if (isset($_SESSION["userName"]) && isset($_SESSION["Id"])) {
 
       .msg {
         width: 420px;
-        height: 480px;
+        height: 500px;
         border-top: 1px solid lightgray;
         border-bottom: 1px solid lightgray;
         padding: 1rem 0;
@@ -131,20 +133,33 @@ if (isset($_SESSION["userName"]) && isset($_SESSION["Id"])) {
         color: whitesmoke;
         align-self: end;
       }
+      a{
+        text-decoration: none;
+
+      }
 
       .logout {
         display: flex;
         flex-direction: column;
-        margin-top: -43%;
+        margin-top: 0%;
+        padding: 15px;
+        width: 25%;
 
-        padding: 30px 30px;
-        width: 13%;
+        justify-content: center;
+        align-items: center;
         text-align: center;
-
+        position: absolute;
+        top: 0;
+        right: 0%;
+        
       }
+
 
       .logout>a:hover {
         border-radius: 10px;
+        width: 70%;
+
+        height: 35px;
         background-color: black;
         color: white;
         text-decoration: none;
@@ -156,31 +171,32 @@ if (isset($_SESSION["userName"]) && isset($_SESSION["Id"])) {
 
   <body>
 
-    
-
-
-<div class="container">
-    <div class="chat">
-      <h2>Solve your question</h2>
-      <div class="msg">
-
-
-
-      </div>
-      <div class="input_msg">
-        <input type="text" placeholder="Ponder the question" id="input_msg">
-        <button class="button-submit" onclick="update()">Send</button>
-      </div>
-    </div>
-    
     <div class="logout">
       <a href="destroychatsession.php">
         Logout from Chatroom
       </a>
     </div>
+
+
+
+
+    <div class="container">
+
+
+
+      <div class="chat">
+        <h2>Chatter Spot</h2>
+        <div class="msg">
+        </div>
+        <div class="input_msg">
+          <input type="text" placeholder="Ponder the question" id="input_msg">
+          <button class="button-submit" onclick="update()">Send</button>
+        </div>
+      </div>
+
     </div>
   </body>
-  <script src="script.js"></script>
+  <script src="js/script.js"></script>
 
   </html>
 

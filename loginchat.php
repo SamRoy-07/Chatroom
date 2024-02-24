@@ -64,6 +64,7 @@ if (isset($_POST["name"]) && isset($_POST["Id"])) {
     }
   </script>
   <style>
+   
     .form {
       display: flex;
       flex-direction: column;
@@ -198,17 +199,11 @@ if (isset($_POST["name"]) && isset($_POST["Id"])) {
       ;
     }
 
-    body {
-      background-image: url("images.jpg");
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-color: #f0f0f0;
-    }
+   
 
 
     body {
-      background-color: #dddbdb;
+      background-color: #f7f7f7;
     }
     .reason{
      
