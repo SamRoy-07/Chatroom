@@ -196,8 +196,28 @@ if (isset($_POST["name"]) && isset($_POST["Id"])) {
       width: 100%;
       height: auto;
       border-radius: 10px;
-      ;
+      
     }
+    .imagehome {
+                height: 30px;
+                width: auto;
+                margin-right: 0px;
+                display: flex;
+                position: absolute;
+                margin-top: 3%;
+                margin-left: 3%;
+                background-color: transparent;
+            }
+
+            .imagehome:hover {
+
+                height: 6%;
+                border-radius: 10px;
+            }
+
+            .imagehome a:hover img {
+                transform: scale(1.4);
+            }
 
    
 
@@ -215,9 +235,11 @@ if (isset($_POST["name"]) && isset($_POST["Id"])) {
 
 <body>
 
-
-
+<a href="../main.php">
+<img src="../mainpng/home.png" class="imagehome">
+  </a>
   <form class="form" method="post" action="">
+    
 
     <div class="image-container">
 

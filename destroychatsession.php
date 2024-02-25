@@ -1,13 +1,11 @@
 <?php
 session_start();
 
-$_SESSION = array();
+// Unset specific session variables related to the chatroom
+unset($_SESSION["userName"]);
+unset($_SESSION["Id"]);
 
-
-session_destroy();
-
-
+// Redirect to main.php
 header("Location: ../main.php");
-
 exit;
 ?>
