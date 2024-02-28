@@ -2,7 +2,7 @@
 session_start();
 include "db.php";
 
-$q = "SELECT * FROM `msg`";
+$q = "SELECT * FROM msg";
 if ($rq = mysqli_query($db, $q)) {
 
   if (mysqli_num_rows($rq) > 0) {

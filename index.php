@@ -9,7 +9,7 @@ if (isset($_SESSION["userName"]) && isset($_SESSION["Id"])) {
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ChatRoom</title>
+    
     <style>
       * {
         margin: 0;
@@ -181,16 +181,13 @@ if (isset($_SESSION["userName"]) && isset($_SESSION["Id"])) {
 
 
     <div class="container">
-
-
-
-      <div class="chat">
+<div class="chat">
         <h2>Chatter Spot</h2>
         <div class="msg">
         </div>
         <div class="input_msg">
           <input type="text" placeholder="Ponder the question" id="input_msg">
-          <button class="button-submit" onclick="update()">Send</button>
+          <input type="submit" class="button-submit" value="Send" onclick="update()">
         </div>
       </div>
 
